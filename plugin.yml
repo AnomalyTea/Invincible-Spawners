@@ -1,0 +1,5 @@
+name: Invincible Spawners
+main: com.anomalytea.InvincibleSpawners.InvincibleSPawners
+version: 0.1
+api-version: 1.13.2
+commands:
