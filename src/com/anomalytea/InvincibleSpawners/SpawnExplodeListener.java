@@ -17,6 +17,10 @@ public class SpawnExplodeListener implements Listener {
 			Block b = i.next();
 			if(b.getType().equals(Material.SPAWNER)) {
 				i.remove();
+				System.out.println("Spawner at x=" + String.valueOf(b.getLocation().getBlockX())
+					+ " y=" + String.valueOf(b.getLocation().getBlockY()) 
+					+ " z=" + String.valueOf(b.getLocation().getBlockZ())
+					+ " was protected from being exploded.");
 			}
 		}
 	}
