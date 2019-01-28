@@ -1,5 +1,5 @@
-name: Invincible Spawners
-main: com.anomalytea.InvincibleSpawners.InvincibleSPawners
+name: Invincible_Spawners
+main: com.anomalytea.InvincibleSpawners.InvincibleSpawners
 version: 0.1
-api-version: 1.13.2
+api-version: 1.13
 commands:
