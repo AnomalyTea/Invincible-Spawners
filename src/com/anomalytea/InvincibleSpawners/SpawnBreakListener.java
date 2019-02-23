@@ -5,12 +5,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpawnBreakListener implements Listener {
-  private JavaPlugin plugin;
+  private InvincibleSpawners plugin;
 
-  public SpawnBreakListener (JavaPlugin plugin) {
+  public SpawnBreakListener (InvincibleSpawners plugin) {
     this.plugin = plugin;
   }
 

@@ -7,12 +7,11 @@ import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpawnExplodeListener implements Listener {
-  private JavaPlugin plugin;
+  private InvincibleSpawners plugin;
 
-  public SpawnExplodeListener(JavaPlugin plugin) {
+  public SpawnExplodeListener(InvincibleSpawners plugin) {
     this.plugin = plugin;
   }
 
