@@ -19,6 +19,10 @@ public class SpawnBreakListener implements Listener {
     // if player is creative and config option is set, then allow break
     if (plugin.getConfig().getBoolean("creative-can-break")
         && e.getPlayer().getGameMode().equals(GameMode.CREATIVE)) {
+      System.out.println("Spawner at x=" + e.getBlock().getLocation().getBlockX()
+          + " y=" + e.getBlock().getLocation().getBlockY()
+          + " z=" + e.getBlock().getLocation().getBlockZ()
+          + " was broken by " + e.getPlayer().getName() + ".");
       return;
     }
 
