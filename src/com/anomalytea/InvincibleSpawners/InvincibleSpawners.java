@@ -24,6 +24,13 @@ public class InvincibleSpawners extends JavaPlugin {
 
     this.reloadConfig();
 
+    if (!this.getConfig().isSet("creative-can-break")) {
+      this.getConfig().set(
+          "creative-can-break",
+          this.getConfig().getDefaults().getBoolean("creative-can-break"));
+      this.saveConfig();
+    }
+
     msg.add("[" + this.getDescription().getName() + "] Config file loaded.");
     System.out.println(msg.get(msg.size() - 1));
 
