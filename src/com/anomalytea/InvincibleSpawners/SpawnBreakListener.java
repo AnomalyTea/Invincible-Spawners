@@ -4,8 +4,14 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpawnBreakListener implements Listener {
+  private JavaPlugin plugin;
+
+  public SpawnBreakListener (JavaPlugin plugin) {
+    this.plugin = plugin;
+  }
 
   @EventHandler
   public void onSpawnBreak(BlockBreakEvent e) {

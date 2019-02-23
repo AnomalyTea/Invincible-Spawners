@@ -10,8 +10,8 @@ public class InvincibleSpawners extends JavaPlugin {
     saveDefaultConfig();
     loadConfig();
 
-    getServer().getPluginManager().registerEvents(new SpawnBreakListener(), this);
-    getServer().getPluginManager().registerEvents(new SpawnExplodeListener(), this);
+    getServer().getPluginManager().registerEvents(new SpawnBreakListener(this), this);
+    getServer().getPluginManager().registerEvents(new SpawnExplodeListener(this), this);
   }
 
   @Override
