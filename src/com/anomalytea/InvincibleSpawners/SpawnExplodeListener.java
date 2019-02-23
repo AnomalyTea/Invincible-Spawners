@@ -9,6 +9,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
 
 public class SpawnExplodeListener implements Listener {
+  private InvincibleSpawners plugin;
+
+  public SpawnExplodeListener(InvincibleSpawners plugin) {
+    this.plugin = plugin;
+  }
 
   @EventHandler
   public void onSpawnExplode(EntityExplodeEvent e) {
