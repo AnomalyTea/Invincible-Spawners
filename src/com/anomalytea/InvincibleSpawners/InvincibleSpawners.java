@@ -12,6 +12,9 @@ public class InvincibleSpawners extends JavaPlugin {
 
     getServer().getPluginManager().registerEvents(new SpawnBreakListener(this), this);
     getServer().getPluginManager().registerEvents(new SpawnExplodeListener(this), this);
+
+    this.getCommand("invinciblespawners").setExecutor(new CommandHandler(this));
+    this.getCommand("invinciblespawners").setTabCompleter(new TabComplete());
   }
 
   @Override
